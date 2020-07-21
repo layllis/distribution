@@ -11,7 +11,7 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="teste3" startnode="1" creator="Twine" creator-version="2.3.5" ifid="8FA0F689-0146-4658-A9C3-5BF7EE9BF468" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+<tw-storydata name="final" startnode="1" creator="Twine" creator-version="2.3.5" ifid="17683699-A639-4FE0-84C7-DF0063C4274A" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
 
 tw-sidebar{
   /* The following hides the undo and redo buttons */
@@ -382,7 +382,7 @@ img { /* Images won't get wider than tw-passage container */
 audio.src=
 	'https://www.mboxdrive.com/trumpwave.mp3';
 audio.loop = true;
-audio.play();</script><tw-passagedata pid="1" name="Abertura" tags="abertura" position="600,250" size="100,100">Você sabe reconhecer uma notícia falsa? Neste jogo você vai descobrir se é muito influenciável, um pouco desatento, ou um expert das fake news.
+audio.play();</script><tw-passagedata pid="1" name="Abertura" tags="abertura" position="600,250" size="100,100">Neste jogo você verá conteúdos relacionados a Covid-19 que circularam pela internet e redes sociais. Muitos deles são falsos, ou foram retirados de seu contexto original para servir a determinados propósitos. Responda às perguntas e descubra se você é muito influenciável, um pouco desatento, ou um expert das fake news.
 
 [[Vamos lá!|Idoso]]</tw-passagedata><tw-passagedata pid="2" name="Idoso" tags="idoso" position="600,400" size="100,100">A imagem acima foi compartilhada por um senador em suas redes sociais e comemora o sucesso da cloroquina no tratamento do corona vírus. No entanto, a família do idoso que aparece na foto solicitou que o senador retirasse a publicação do ar.
 
@@ -420,6 +420,8 @@ Continue acertando para desbloquear o próximo nível.]
 [[Continuar|Maduro]]</tw-passagedata><tw-passagedata pid="9" name="Gameover1" tags="gameover1" position="125,850" size="100,100">**VOCÊ CAI COMO UM PATINHO EM FAKE NEWS!**
 
 Para não ser vítima de notícias falsas, desconfie de veículos desconhecidos e verifique se a matéria já saiu em grandes portais de notícias. Ah! Tome cuidado também com os grupos de Whatsapp. Por ali circula muita desinformação ;)
+
+(link: &quot;Aprender mais sobre desinformação&quot;)[(goto-url: &#39;https://www.nexojornal.com.br/estante/trechos/2020/06/05/%E2%80%98Desinforma%C3%A7%C3%A3o%E2%80%99-a-fun%C3%A7%C3%A3o-pol%C3%ADtica-e-econ%C3%B4mica-da-mentira&#39;)]
 
 [[Voltar ao início|Abertura]]</tw-passagedata><tw-passagedata pid="10" name="Maduro" tags="maduro" position="600,1000" size="100,100">(if: $estatua &lt; 2) [Artigos escritos por um “aclamado médico” foram publicados no Twitter afirmando haver um antídoto contra o corona vírus: uma mistura contendo capim-santo, gengibre, sabugueiro, pimenta do reino, limão e mel de abelha.](if: $estatua &gt; 1) [Artigos escritos por um “aclamado médico” foram publicados no Twitter afirmando haver um antídoto contra o corona vírus: uma mistura contendo capim-santo, gengibre, sabugueiro, pimenta do reino, limão e mel de abelha.]
 
@@ -496,6 +498,8 @@ Continue acertando para desbloquear o próximo nível.]
 (if: $golfinho &gt; 0) [[Continuar|Desabastecimento2]]</tw-passagedata><tw-passagedata pid="25" name="Gameover2" tags="gameover2" position="875,1750" size="100,100">**VOCÊ NÃO É COMPLETAMENTE INFLUENCIÁVEL, MAS ANDA UM POUCO DESATENTO!**
 
 Para não ser vítima de notícias falsas, desconfie de veículos desconhecidos e verifique se a matéria já saiu em grandes portais de notícias. Ah! Tome cuidado também com os grupos de Whatsapp. Por ali circula muita desinformação ;)
+
+[[Ver outras perguntas|RAI]]
 
 [[Voltar ao início|Abertura]]</tw-passagedata><tw-passagedata pid="26" name="Desabastecimento2" tags="desabastecimento" position="1100,1900" size="100,100">(if: $golfinho &lt; 2) [Apesar de falsas, as informações do vídeo alcançaram milhares de visualizações.](if: $golfinho &gt; 1) [Apesar de falsas, as informações do vídeo alcançaram milhares de visualizações.]
 
@@ -582,6 +586,8 @@ Continue acertando para provar que é um expert das fake news.]
 
 Para não ser vítima de notícias falsas, desconfie de veículos desconhecidos e verifique se a matéria já saiu em grandes portais de notícias. Ah! Tome cuidado também com os grupos de Whatsapp. Por ali circula muita desinformação ;)
 
+[[Ver outras perguntas|Encomendas]]
+
 [[Voltar ao início|Abertura]]</tw-passagedata><tw-passagedata pid="42" name="Encomendas" tags="encomendas" position="1600,2800" size="100,100">(if: $palmeira &lt; 2) [Circulam pelas redes sociais notícias de que as que encomendas vindas da China chegam aos lares contaminadas pelo corona vírus.](if: $palmeira &gt; 1) [Circulam pelas redes sociais notícias de que as que encomendas vindas da China chegam aos lares contaminadas pelo corona vírus.]
 
 Sabe-se que o vírus consegue sobreviver por até:
@@ -604,6 +610,8 @@ Continue acertando para provar que é um expert das fake news.
 [[Um famoso médico oncologista, cientista e escritor|Cantor-e]]
 [[Ele mesmo|Cantor-c]]</tw-passagedata><tw-passagedata pid="46" name="Vitória" tags="vitoria" position="2175,2950" size="100,100">Parabéns, você é um expert das fake news! Uma notícia falsa dificilmente continuará circulando se chegar às suas mãos!
 
+[[Compartilhe seu resultado nas redes sociais]]
+
 [[Voltar ao início|Abertura]]</tw-passagedata><tw-passagedata pid="47" name="Cantor-e" tags="cantor-e" position="1525,3250" size="100,100">(if: $palmeira &lt; 2) [Errado. O homem afirmou que a fonte das afirmações era &quot;ele mesmo&quot; e que a prova era &quot;o próprio áudio&quot;.
 
 [[Más notícias...|Gameover3]]](if: $palmeira &gt; 1) [Errado. O homem afirmou que a fonte das afirmações era &quot;ele mesmo&quot; e que a prova era &quot;o próprio áudio&quot;.
@@ -624,7 +632,7 @@ Este tipo de conteúdo foi motivação para a campanha:
 
 [[Más notícias...|Gameover3]]</tw-passagedata><tw-passagedata pid="51" name="Espirro-c" tags="espirro-c" position="1675,3550" size="100,100">(set: $palmeira to $palmeira + 1)Você acertou! Para combater a discriminação sofrida por causa de fake news envolvendo chineses e a Covid-19, os sino-franceses lançaram a campanha #JeNeSuisPasUnVirus (Eu não sou um vírus).
 
-[[Boas notícias!|Vitória]]</tw-passagedata></tw-storydata>
+[[Boas notícias!|Vitória]]</tw-passagedata><tw-passagedata pid="52" name="Compartilhe seu resultado nas redes sociais" tags="" position="2175,3100" size="100,100">Em construção</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
